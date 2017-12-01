@@ -1,7 +1,25 @@
 <html>
 <body>
 
-User: <?php echo $_GET["userurl"]; ?><br>
+<?php
+  $url = $_GET["userurl"];
+  //connection settings
+  $connectionInfo = array("UID" => "", "pwd" => "", "Database" => "DBFinal")
+  $serverName = "";
+  $conn = sqlsrv_connect($serverName, $connectionInfo);
+  
+  //Query to get data from Person table
+  $sql1 = "SELECT * FROM Person WHERE url = $url";
+  $going = sqlsrv_query($conn, $sql1);
+  $row1 = sqlsrv_fetch_array($going);
+  $pid = $row['Pid'];
+  
+  //Remaining queries
+  $sql2 = "SELECT * FROM Experience WHERE Pid = $pid";
+  $sql3 = "SELECT * FROM Projects WHERE Pid = $pid";
+  $sql4 = "SELECT * FROM Skills WHERE Pid = $pid";
+  
+?>
 
 
 </body>
