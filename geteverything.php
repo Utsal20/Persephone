@@ -4,7 +4,7 @@
 <?php
   $url = $_GET["userurl"];
   //connection settings
-  $connectionInfo = array("UID" => "srajah19", "pwd" => "Peteisnice2017", "Database" => "LinkedUS")
+  $connectionInfo = array("UID" => "srajah19", "pwd" => "Peteisnice2017", "Database" => "LinkedUs")
   $serverName = "linkedus.database.windows.net";
   $conn = sqlsrv_connect($serverName, $connectionInfo);
   
