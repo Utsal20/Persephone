@@ -11,19 +11,16 @@
   $going = sqlsrv_query($conn, $sql1) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
   while ($row1 = sqlsrv_fetch_array($going)){
     $pid = $row1['Pid'];
+    echo $row1['Pid']."<br>";
+    echo $row1['Name']."<br>";
+    echo $row1['Github']."<br>";
+    echo $row1['Address']."<br>";
   }
 
-  echo $row1['Pid']."<br>";
-  echo $row1['Name']."<br>";
-  echo $row1['Github']."<br>";
-  echo $row1['Address']."<br>";
-  
-  /*
   //Remaining queries
   $sql2 = "SELECT * FROM Experience WHERE Pid = $pid";
   $sql3 = "SELECT * FROM Projects WHERE Pid = $pid";
   $sql4 = "SELECT * FROM Skills WHERE Pid = $pid";
-  */
 
   echo $url."c";
 ?>
