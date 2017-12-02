@@ -8,10 +8,10 @@
   
   //Query to get data from Person table
   $sql1 = "SELECT * FROM Person WHERE url = ".$url;
-  $going = sqlsrv_query($conn, $sql1) or die("<p>.print_r(sqlsrv_errors(), TRUE)."</p>");
+  $going = sqlsrv_query($conn, $sql1) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>";
   $row1 = sqlsrv_fetch_array($going);
   $pid = $row['Pid'];
-  /*
+
   //Remaining queries
   $sql2 = "SELECT * FROM Experience WHERE Pid = $pid";
   $sql3 = "SELECT * FROM Projects WHERE Pid = $pid";
@@ -19,6 +19,6 @@
   
   echo $pid;
   echo $row1;
-*/
+
   echo $url;
 ?>
