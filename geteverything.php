@@ -2,9 +2,9 @@
   $url = $_GET["userurl"];
 
   //connection settings
-  $connectionInfo = array("UID" => "srajah19", "pwd" => "Peteisnice2017", "Database" => "LinkedUs")
+  $connectionInfo = array("UID" => "srajah19", "pwd" => "Peteisnice2017", "Database" => "LinkedUs");
   $serverName = "linkedus.database.windows.net";
-  $conn = sqlsrv_connect($serverName, $connectionInfo) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>";;
+  $conn = sqlsrv_connect($serverName, $connectionInfo) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>";
   
   //Query to get data from Person table
   $sql1 = "SELECT * FROM Person WHERE url = ".$url;
