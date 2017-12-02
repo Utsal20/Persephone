@@ -1,6 +1,3 @@
-<html>
-<body>
-
 <?php
   $url = $_GET["userurl"];
   //connection settings
@@ -23,7 +20,3 @@
   echo $row1;
   
 ?>
-
-
-</body>
-</html>
