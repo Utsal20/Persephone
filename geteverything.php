@@ -4,8 +4,8 @@
 <?php
   $url = $_GET["userurl"];
   //connection settings
-  $connectionInfo = array("UID" => "", "pwd" => "", "Database" => "DBFinal")
-  $serverName = "";
+  $connectionInfo = array("UID" => "srajah19", "pwd" => "Peteisnice2017", "Database" => "DBFinal")
+  $serverName = "linkedus.database.windows.net";
   $conn = sqlsrv_connect($serverName, $connectionInfo);
   
   //Query to get data from Person table
@@ -18,6 +18,9 @@
   $sql2 = "SELECT * FROM Experience WHERE Pid = $pid";
   $sql3 = "SELECT * FROM Projects WHERE Pid = $pid";
   $sql4 = "SELECT * FROM Skills WHERE Pid = $pid";
+  
+  echo $pid;
+  echo $row1
   
 ?>
 
