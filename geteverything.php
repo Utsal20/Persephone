@@ -10,7 +10,7 @@
   $sql1 = "SELECT * FROM Person WHERE Url = '".$url."'";
   $going = sqlsrv_query($conn, $sql1) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
   $row1 = sqlsrv_fetch_array($going);
-  $pid = $row['Pid'];
+  $pid = $row1['Pid'];
   
   /*
   //Remaining queries
