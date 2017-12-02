@@ -11,9 +11,10 @@
   $going = sqlsrv_query($conn, $sql1) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
   while ($row1 = sqlsrv_fetch_array($going)){
     $pid = $row1['Pid'];
-    echo $pid."a";
-    echo $row1."b";
   }
+
+  foreach ($row1 as $key => $val){}
+  var_dump($row1);
   
   /*
   //Remaining queries
