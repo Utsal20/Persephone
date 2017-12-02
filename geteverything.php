@@ -13,8 +13,10 @@
     $pid = $row1['Pid'];
   }
 
-  foreach ($row1 as $key => $val){}
-  var_dump($row1);
+  echo $row1['Pid']."<br>";
+  echo $row1['Name']."<br>";
+  echo $row1['Github']."<br>";
+  echo $row1['Address']."<br>";
   
   /*
   //Remaining queries
