@@ -6,7 +6,7 @@
   $conn = sqlsrv_connect($serverName, $connectionInfo);
   
   //Query to get data from Person table
-  $sql1 = "SELECT * FROM Person WHERE url = $url";
+  $sql1 = "SELECT * FROM Person WHERE url = ".$url;
   $going = sqlsrv_query($conn, $sql1);
   $row1 = sqlsrv_fetch_array($going);
   $pid = $row['Pid'];
