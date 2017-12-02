@@ -1,5 +1,6 @@
 <?php
   $url = $_GET["userurl"];
+/*
   //connection settings
   $connectionInfo = array("UID" => "srajah19", "pwd" => "Peteisnice2017", "Database" => "LinkedUs")
   $serverName = "linkedus.database.windows.net";
@@ -18,5 +19,6 @@
   
   echo $pid;
   echo $row1;
-  
+*/
+  echo $url;
 ?>
