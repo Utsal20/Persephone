@@ -7,7 +7,7 @@
   $conn = sqlsrv_connect($serverName, $connectionInfo) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>");
   
   //Query to get data from Person table
-  $sql1 = "SELECT * FROM Person WHERE url = ".$url;
+  $sql1 = "SELECT * FROM Person WHERE Url = '".$url."'";
   $going = sqlsrv_query($conn, $sql1) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
   $row1 = sqlsrv_fetch_array($going);
   $pid = $row['Pid'];
