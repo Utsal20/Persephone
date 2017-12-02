@@ -5,6 +5,9 @@
   $address = $_POST["address"];
   $github = $_POST["github"];
 
+  if ($name == ""  || $email=="" || $phone=="" || $address=="" || $github=="")
+    echo "One or more required fields left empty. Please go back and fill them up.<br>";
+
   $etitle = $_POST["Etitle"];
   $ecompany = $_POST["Ecompany"];
   $edate = $_POST["Edate"];
