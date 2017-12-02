@@ -20,7 +20,7 @@
   $sql4 = "SELECT * FROM Skills WHERE Pid = $pid";
   
   echo $pid;
-  echo $row1
+  echo $row1;
   
 ?>
 
