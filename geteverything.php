@@ -19,9 +19,9 @@
   }
 
   //Remaining queries
-  $sql2 = "SELECT * FROM Experience WHERE Pid = '".$pid."'";
-  $sql3 = "SELECT * FROM Projects WHERE Pid = '".$pid."'";
-  $sql4 = "SELECT * FROM Skills WHERE Pid = '".$pid."'";
+  $sql2 = "SELECT * FROM Experience WHERE Pid = ".$pid;
+  $sql3 = "SELECT * FROM Projects WHERE Pid = ".$pid;
+  $sql4 = "SELECT * FROM Skills WHERE Pid = ".$pid;
   
   echo $pid."<br>";
   echo $url."c";
