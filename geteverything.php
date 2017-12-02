@@ -18,7 +18,9 @@
   $sql3 = "SELECT * FROM Projects WHERE Pid = $pid";
   $sql4 = "SELECT * FROM Skills WHERE Pid = $pid";
   */
-  echo $pid;
+  echo $pid."a";
 
-  echo $url;
+  echo $row1."b";
+
+  echo $url."c";
 ?>
