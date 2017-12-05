@@ -1,0 +1,206 @@
+/* General CSS */
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h6 {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+.divHeader {
+    font-size: 25px;
+    color: #353535;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* Name Div */
+
+.nameDiv {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 0px;
+    z-index: 3;
+    background: 
+    linear-gradient(
+    rgba(74, 67, 67, 0.45),
+    rgba(255, 255, 255, 0.45)
+    ),
+    url('Images/WhiteTriangle.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    margin-bottom: 40px;
+    letter-spacing: 2;
+}
+
+.gitHubBubbleContainer {
+    width: 50%;
+    float: left;
+}
+
+.emailBubbleContainer {
+    width: 50%;
+    float: right;
+}
+
+.gitHubBubble, .emailBubble {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.gitHubBubble {
+    float: right;
+    margin-right: 20px;
+    background-image: url('Images/github2.png');
+    background-size: cover;
+}
+
+.emailBubble {
+    margin-left: 20px;
+    background-image: url('Images/email.png');
+    background-size: cover;
+}
+
+.gitHubBubble:hover, .emailBubble:hover {
+    box-shadow: 0 0 7px #fff;
+}
+
+/* Basic Info Div */
+
+.basicInfoDiv {
+    width: 100%;
+    background-color: rgba(128, 128, 128, .75);
+    padding-top: 0px;
+    padding-bottom: 115px;
+    margin-top: 190px;
+}
+
+.phoneNumberDiv, .addressDiv {
+    width: 50%;
+    float: left;
+}
+
+.textAlignRight {
+    text-align: right;
+    padding-right: 25px;
+}
+
+.textAlignLeft {
+    text-align: left;
+    padding-left: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+/* Experience Div */
+
+.experienceDiv {
+    width: 100%;
+    background: 
+    linear-gradient(
+    rgba(74, 67, 67, 0.45),
+    rgba(255, 255, 255, 0.45)
+    ),
+    url('Images/WhitePattern2.jpg');
+    background-attachment: fixed;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.individualExperienceDiv {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: lightgrey;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.individualExperienceDiv:hover {
+    box-shadow: 0 0 7px white;
+}
+
+/* Projects Div */
+
+.projectsDiv {
+    width: 100%;
+    background: 
+    linear-gradient(
+    rgba(74, 67, 67, 0.45), 
+    rgba(255, 255, 255, 0.45)
+    ),
+    url('Images/WhiteTriangle.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.individualProjectDiv {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: lightgrey;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    border-radius: 15px; 
+    margin-top: 80px;
+}
+
+.individualProjectDiv:hover {
+    box-shadow: 0 0 7px #fff;
+}
+
+/* Skills Div */
+
+.skillsDiv {
+    background-color: rgba(128, 128, 128, .75);
+    margin-top: 130px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.skillsDivHeader {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.individualSkillDiv {
+    background-color: white;
+    width: 20%;
+    margin-left: 40%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.individualSkillDiv:hover {
+    box-shadow: 0 0 7px #fff;
+}
