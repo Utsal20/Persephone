@@ -18,6 +18,7 @@
   $pid = 0;
   while ($row1 = sqlsrv_fetch_array($going)){
     $pid = $row1['Pid'];
+    echo $pid;
     echo '<body><div class="nameDiv"><h1>'.$row1['name'].'</h1>';
     echo '<div class="gitHubBubbleContainer"><a href="'.$row1['github'].'" target="blank"><div class="gitHubBubble"></div></a></div>';
     echo '<div class="emailBubbleContainer"><a href="mailto:'.$row1['email'].'"><div class="emailBubble"></div></a></div>';
