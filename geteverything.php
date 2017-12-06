@@ -1,6 +1,12 @@
 <?php
   $url = $_GET["userurl"];
 
+  //Head portion
+  echo '<html><head><title>Persephone</title><link rel="Storcut Icon" href="Images/star.png" /><link rel="Stylesheet" href="styles.css" />'
+  echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>'
+  echo '<script src="https://code.jquery.com/jquery-1.10.2.js"></script>'
+  echo '<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script></head>'
+
   //connection settings
   $connectionInfo = array("UID" => "srajah19", "pwd" => "Peteisnice2017", "Database" => "LinkedUs");
   $serverName = "linkedus.database.windows.net";
