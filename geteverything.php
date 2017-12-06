@@ -2,10 +2,10 @@
   $url = $_GET["userurl"];
 
   //Head portion
-  echo '<html><head><title>Persephone</title><link rel="Storcut Icon" href="Images/star.png" /><link rel="Stylesheet" href="styles.css" />'
-  echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>'
-  echo '<script src="https://code.jquery.com/jquery-1.10.2.js"></script>'
-  echo '<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script></head>'
+  echo '<html><head><title>Persephone</title><link rel="Storcut Icon" href="Images/star.png" /><link rel="Stylesheet" href="styles.css" />';
+  echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>';
+  echo '<script src="https://code.jquery.com/jquery-1.10.2.js"></script>';
+  echo '<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script></head>';
 
   //connection settings
   $connectionInfo = array("UID" => "srajah19", "pwd" => "Peteisnice2017", "Database" => "LinkedUs");
@@ -18,9 +18,9 @@
   $pid = 0;
   while ($row1 = sqlsrv_fetch_array($going)){
     $pid = $row1['Pid'];
-    echo '<body><div class="nameDiv"><h1>'.$row1['name'].'</h1>'
-    echo '<div class="gitHubBubbleContainer"><a href="'.$row1['github'].'" target="blank"><div class="gitHubBubble"></div></a></div>'
-    echo '<div class="emailBubbleContainer"><a href="mailto:'.$row1['email'].'"><div class="emailBubble"></div></a></div>'  
+    echo '<body><div class="nameDiv"><h1>'.$row1['name'].'</h1>';
+    echo '<div class="gitHubBubbleContainer"><a href="'.$row1['github'].'" target="blank"><div class="gitHubBubble"></div></a></div>';
+    echo '<div class="emailBubbleContainer"><a href="mailto:'.$row1['email'].'"><div class="emailBubble"></div></a></div>';
   }
 
   //Remaining queries</a></div>
