@@ -26,7 +26,7 @@
     echo '<h3 class="textAlignRight">'.$row1['Phone'].'</h3></div>';
     echo '<div class="addressDiv"><h2 class="textAlignLeft">Address</h2><h3 class="textAlignLeft">'.$row1['Address'].'</h3></div></div></div>';
   }
-  if ($pid == 0){echo '<body><h1>User not found. Please go back and try again!</h1></body></html>';}
+  if ($pid == 0){die('<body>User not found. Please go back and try again!</body></html>');}
 
   //Remaining queries</a></div>
   $sql2 = "SELECT * FROM Experience WHERE Pid = ".$pid;
