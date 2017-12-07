@@ -43,7 +43,7 @@
   while ($row3 = sqlsrv_fetch_array($going)){
     echo '<div class="projectsDiv"><h2 class="divHeader">Projects</h2><div class="individualProjectDiv"><h4>Title:</h4><h5>'.$row3['Title'].'</h5>';
     echo '<h4>Description</h4><h5>'.$row3['Description'].'</h5>';
-    echo '<h4>Link</h4><h5><a href="'.$row3['Link'].' target="_blank">'.$row3['Link'].'</a></h5></div>';
+    echo '<h4>Link</h4><h5><a href="'.$row3['Link'].'" target="_blank">'.$row3['Link'].'</a></h5></div>';
   }
 
   $sql4 = "SELECT * FROM Skills WHERE Pid = ".$pid;
