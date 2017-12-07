@@ -18,6 +18,9 @@
   $pid = 0;
   while ($row1 = sqlsrv_fetch_array($going)){
     $pid = $row1['Pid'];
+    if ($pid ==0){
+      echo '<body><h1>User not found. Please go back and try again!</h1></body></html>';
+    }
     echo '<body><div class="nameDiv"><h1>'.$row1['Name'].'</h1>';
     echo '<div class="gitHubBubbleContainer"><a href="'.$row1['Github'].'" target="blank"><div class="gitHubBubble"></div></a></div>';
     echo '<div class="emailBubbleContainer"><a href="mailto:'.$row1['Email'].'"><div class="emailBubble"></div></a></div>';
