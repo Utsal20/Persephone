@@ -8,7 +8,7 @@
   echo '<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script></head>';
 
   //connection settings
-  $connectionInfo = array("UID" => "srajah19", "pwd" => "Peteisnice2017", "Database" => "LinkedUs");
+  $connectionInfo = array("UID" => "visitor", "pwd" => "Password1", "Database" => "LinkedUs");
   $serverName = "linkedus.database.windows.net";
   $conn = sqlsrv_connect($serverName, $connectionInfo) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>");
   
