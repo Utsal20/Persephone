@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<style>  
+<style tyoe>  
 
 body {
-    background-color: grey;
+    background-image: url(indexbackground.jpg);
+	background-size: 100%;
+	color: white;
 }
 
 h1 {
-	color: purple;
+	color: white;
 	text-align: center; 
 	font-family: Bell MT;
 	font-size: 34;
@@ -21,26 +23,38 @@ h1 {
 
 <form action="writingtodatabase.php" method="post">
 <u>Person Details</u><br>
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-Phone number: <input type="text" name="phonenumber"><br>
-Address: <input type="text" name="address"><br>
-Github: <input type="text" name="github"><br>
+Name: <br>
+<input type="text" name="name" size="25"><br>
+E-mail: <br>
+<input type="text" name="email" size="30"><br>
+Phone number: <br>
+<input type="text" name="phonenumber" size="10"><br>
+Address: <br>
+<input type="text" name="address" size="70"><br>
+Github: <br>
+<input type="text" name="github" size="30"><br>
 <br>
 <u>Experience Details</u><br>
-Title: <input type="text" name="Etitle"><br>
-Company: <input type="text" name="Ecompany"><br>
-Date: <input type="text" name="Edate"><br>
-Description: <input type="text" name="Edescription"><br>
+Title: <br>
+<input type="text" name="Etitle" size="20"><br>
+Company: <br>
+<input type="text" name="Ecompany" size="35"><br>
+Date: <br>
+<input type="text" name="Edate" size="20"><br>
+Description: <br>
+<input type="text" name="Edescription" size="100"><br>
 <br>
 <u>Project Details</u><br>
-Title: <input type="text" name="Ptitle"><br>
-Link: <input type="text" name="Plink"><br>
-Description: <input type="text" name="Pdescription"><br>
+Title: <br>
+<input type="text" name="Ptitle" size="20"><br>
+Link: <br>
+<input type="text" name="Plink" size="50"><br>
+Description: <br>
+<input type="text" name="Pdescription" size="100"><br>
 <br>
 <u>Skill Details</u><br>
-Skill: <input type="text" name="skill"><br>
-
+Skill: <br>
+<input type="text" name="skill" size="20"><br>
 <input type="submit">
 </form>
 
