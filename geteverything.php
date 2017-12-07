@@ -46,5 +46,10 @@
   }
 
   $sql4 = "SELECT * FROM Skills WHERE Pid = ".$pid;
-
+  $going = sqlsrv_query($conn, $sql4) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
+  echo '<div class="skillsDiv"><h2 class="divHeader skillsDivHeader">Skills</h2>';
+  while ($row3 = sqlsrv_fetch_array($going)){
+    echo '<div class="individualSkillDiv"><h6>'.$row3['Skills'].'</h6></div>';
+  }
+  echo '</div></div></body></html>'
 ?>
