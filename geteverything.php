@@ -31,10 +31,20 @@
   $sql2 = "SELECT * FROM Experience WHERE Pid = ".$pid;
   $going = sqlsrv_query($conn, $sql2) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
   while ($row2 = sqlsrv_fetch_array($going)){
-    echo 'Success';
+    echo '<div class="experienceDiv"><h2 class="divHeader">Experience</h2><div class="individualExperienceDiv"><h4>Title:</h4><h5>'.$row2['Title'].'</h5>';
+    echo '<h4>Company:</h4><h5>'.$row2['Company'].'</h5>';
+    echo '<h4>Date:</h4><h5>'.$row2['Date'].'</h5>';
+    echo '<h4>Description</h4><h5>'.$row2['Description'].'</h5></div></div>';
   }
 
   $sql3 = "SELECT * FROM Projects WHERE Pid = ".$pid;
+  $going = sqlsrv_query($conn, $sql3) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
+  while ($row3 = sqlsrv_fetch_array($going)){
+    echo '<div class="projectsDiv"><h2 class="divHeader">Projects</h2><div class="individualProjectDiv"><h4>Title:</h4><h5>'.$row3['Title'].'</h5>';
+    echo '<h4>Description</h4><h5>'.$row3['Description'].'</h5>';
+    echo '<h4>Link</h4><h5><a href="'.$row3['Link'].'target="blank">'.$row3['Link'].'</a></h5></div>';
+  }
+
   $sql4 = "SELECT * FROM Skills WHERE Pid = ".$pid;
 
 ?>
