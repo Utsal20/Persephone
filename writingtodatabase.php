@@ -48,4 +48,6 @@
 
   $sql4 = "INSERT INTO Skills VALUES ($pid, $skill);"
   sqlsrv_query($conn, $sql4);
+
+  echo "Added! Your UserId is: ".$userid."<br>";
 ?>
