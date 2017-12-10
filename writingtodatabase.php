@@ -27,7 +27,7 @@
     die("One or more required fields left empty. Please go back and fill them up.<br>");
 
   $skill = $_POST["skill"];
-/*
+
   $connectionInfo = array("UID" => "srajah19", "pwd" => "Peteisnice2017", "Database" => "LinkedUs");
   $serverName = "linkedus.database.windows.net";
   $conn = sqlsrv_connect($serverName, $connectionInfo) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>");
@@ -53,8 +53,7 @@
   sqlsrv_query($conn, $sql4);
 
   echo "Added! Your UserId is: ".$userid."<br>";
-  */
-  echo "Test!<br>";
+
 ?>
 </body>
 </html>
