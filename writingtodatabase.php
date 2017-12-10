@@ -39,7 +39,7 @@
     $pid = $row1['Pid'];
   }
   $pid++; //creating a new pid for new user
- /* 
+
   $sql1 = "INSERT INTO Person VALUES ($pid, $name, $github, $address, $phone, $email, $userid);";
   sqlsrv_query($conn, $sql1) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>");
 
@@ -52,7 +52,7 @@
   $skill = "'".$skill."'";
   $sql4 = "INSERT INTO Skills (Pid, Skills) VALUES ($pid, $skill);";
   sqlsrv_query($conn, $sql4) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>");
-*/
+  /*
   echo $pid;
   echo $name;
   echo $github;
@@ -71,7 +71,7 @@
   echo $pdescription;
   
   echo $skill;
-
+*/
   echo "Added! Your UserId is: ".$userid."<br>";
 ?>
 </body>
