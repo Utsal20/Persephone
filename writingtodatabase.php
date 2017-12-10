@@ -49,7 +49,8 @@
   $sql3 = "INSERT INTO Projects VALUES ($pid, $ptitle, $description, $link);"
   sqlsrv_query($conn, $sql3);
 */
-  $sql4 = "INSERT INTO Skills (Pid, Skills) VALUES ($pid, '$skill');"
+  $skill = "'".$skill."'";
+  $sql4 = "INSERT INTO Skills (Pid, Skills) VALUES ($pid, $skill);"
   sqlsrv_query($conn, $sql4) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>");
 
   echo "Added! Your UserId is: ".$userid."<br>";
