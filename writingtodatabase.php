@@ -39,7 +39,7 @@
     $pid = $row1['Pid'];
   }
   $pid++; //creating a new pid for new user
-
+/*
   $sql1 = "INSERT INTO Person VALUES ($pid, $name, $github, $address, $phone, $email, $userid);"
   sqlsrv_query($conn, $sql1);
 
@@ -48,8 +48,8 @@
 
   $sql3 = "INSERT INTO Projects VALUES ($pid, $ptitle, $description, $link);"
   sqlsrv_query($conn, $sql3);
-
-  $sql4 = "INSERT INTO Skills VALUES ($pid, $skill);"
+*/
+  $sql4 = "INSERT INTO Skills (Pid, Skills) VALUES ($pid, $skill);"
   sqlsrv_query($conn, $sql4);
 
   echo "Added! Your UserId is: ".$userid."<br>";
