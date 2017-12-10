@@ -37,12 +37,9 @@
   $pid = 0;
   while ($row1 = sqlsrv_fetch_array($going)){
     $pid = $row1['Pid'];
-    echo $pid."<br>";
   }
   $pid++; //creating a new pid for new user
-  
-  echo $pid;
-/*
+
   $sql1 = "INSERT INTO Person VALUES ($pid, $name, $github, $address, $phone, $email, $userid);"
   sqlsrv_query($conn, $sql1);
 
@@ -56,7 +53,6 @@
   sqlsrv_query($conn, $sql4);
 
   echo "Added! Your UserId is: ".$userid."<br>";
-*/
 ?>
 </body>
 </html>
