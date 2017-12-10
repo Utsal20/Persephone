@@ -16,6 +16,7 @@
   $sql1 = "SELECT * FROM Person WHERE Url = '".$url."'";
   $going = sqlsrv_query($conn, $sql1) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
   $pid = 0;
+  //fecth the rows and display personal information
   while ($row1 = sqlsrv_fetch_array($going)){
     $pid = $row1['Pid'];
     echo '<body><div class="nameDiv"><h1>'.$row1['Name'].'</h1>';
@@ -28,7 +29,8 @@
   }
   if ($pid == 0){die('<body>User not found. Please go back and try again!</body></html>');}
 
-  //Remaining queries</a></div>
+  //Remaining queries
+  //fetch and display experience information
   $sql2 = "SELECT * FROM Experience WHERE Pid = ".$pid;
   $going = sqlsrv_query($conn, $sql2) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
   while ($row2 = sqlsrv_fetch_array($going)){
@@ -38,6 +40,7 @@
     echo '<h4>Description</h4><h5>'.$row2['Description'].'</h5></div></div>';
   }
 
+  //fetch and display projects information
   $sql3 = "SELECT * FROM Projects WHERE Pid = ".$pid;
   $going = sqlsrv_query($conn, $sql3) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
   while ($row3 = sqlsrv_fetch_array($going)){
@@ -45,12 +48,14 @@
     echo '<h4>Description</h4><h5>'.$row3['Description'].'</h5>';
     echo '<h4>Link</h4><h5><a href="'.$row3['Link'].'" target="_blank">'.$row3['Link'].'</a></h5></div>';
   }
-
+  
+  //fetch and display skills
   $sql4 = "SELECT * FROM Skills WHERE Pid = ".$pid;
   $going = sqlsrv_query($conn, $sql4) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
   echo '<div class="skillsDiv"><h2 class="divHeader skillsDivHeader">Skills</h2>';
   while ($row3 = sqlsrv_fetch_array($going)){
     echo '<div class="individualSkillDiv"><h6>'.$row3['Skills'].'</h6></div>';
   }
-  echo '</div></div></body></html>'
+  echo '</div></div></body></html>';
+  sqlsrv_close($conn);
 ?>
