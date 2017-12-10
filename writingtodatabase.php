@@ -39,19 +39,38 @@
     $pid = $row1['Pid'];
   }
   $pid++; //creating a new pid for new user
-  
+ /* 
   $sql1 = "INSERT INTO Person VALUES ($pid, $name, $github, $address, $phone, $email, $userid);";
   sqlsrv_query($conn, $sql1) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>");
 
   $sql2 = "INSERT INTO Experience VALUES ($pid, $etitle, $ecompany, $edate, $edescription);";
   sqlsrv_query($conn, $sql2) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>");
 
-  $sql3 = "INSERT INTO Projects VALUES ($pid, $ptitle, $description, $link);";
+  $sql3 = "INSERT INTO Projects VALUES ($pid, $ptitle, $pdescription, $plink);";
   sqlsrv_query($conn, $sql3) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>");
   
   $skill = "'".$skill."'";
   $sql4 = "INSERT INTO Skills (Pid, Skills) VALUES ($pid, $skill);";
   sqlsrv_query($conn, $sql4) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>");
+*/
+  echo $pid;
+  echo $name;
+  echo $github;
+  echo $address;
+  echo $phone;
+  echo $email;
+  echo $userid;
+  
+  echo $etitle;
+  echo $ecompany;
+  echo $edate;
+  echo $edescription;
+  
+  echo $ptitle;
+  echo $plink;
+  echo $pdescription;
+  
+  echo $skill;
 
   echo "Added! Your UserId is: ".$userid."<br>";
 ?>
