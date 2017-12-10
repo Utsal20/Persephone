@@ -39,6 +39,8 @@
     $pid = $row1['Pid'];
   }
   $pid++; //creating a new pid for new user
+  
+  echo $pid;
 /*
   $sql1 = "INSERT INTO Person VALUES ($pid, $name, $github, $address, $phone, $email, $userid);"
   sqlsrv_query($conn, $sql1);
