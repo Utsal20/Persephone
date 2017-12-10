@@ -41,8 +41,8 @@
   $pid++; //creating a new pid for new user
 
   echo $name."<br>";
-  echo $Edate."<br>";
-  echo $Plink."<br>";
+  echo $edate."<br>";
+  echo $plink."<br>";
   echo $skill."<br>";
   /*
   $sql1 = "INSERT INTO Person VALUES ($pid, $name, $github, $address, $phone, $email, $userid);"
