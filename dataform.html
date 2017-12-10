@@ -1,30 +1,55 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<style tyoe>  
-
+<style>  
 body {
     background-image: url(indexbackground.jpg);
 	background-size: 100%;
 	color: white;
+	padding-left: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
-	color: white;
-	text-align: center; 
-	font-family: Bell MT;
+	color: rgb(210, 218, 241);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 34;
+}
+
+input{
+	font-size: 14px;
+    border-radius: 3px;
+}
+
+.inp{
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.inp:hover{
+    background-color: #4C9150;
 }
 </style>
 </head>
-<body>
 
 <h1>LinkedUs</h1>
-
+<body>
 <form action="writingtodatabase.php" method="post">
-<u>Person Details</u><br>
+<h4>PERSONAL INFORMATION</h4>
 Name: <br>
 <input type="text" name="name" size="25"><br>
+School UserID: <br>
+<input type="text" name="userid" size="25"><br>
 E-mail: <br>
 <input type="text" name="email" size="30"><br>
 Phone number: <br>
@@ -34,7 +59,7 @@ Address: <br>
 Github: <br>
 <input type="text" name="github" size="30"><br>
 <br>
-<u>Experience Details</u><br>
+<h4>EXPERIENCE</h4>
 Title: <br>
 <input type="text" name="Etitle" size="20"><br>
 Company: <br>
@@ -44,7 +69,7 @@ Date: <br>
 Description: <br>
 <input type="text" name="Edescription" size="100"><br>
 <br>
-<u>Project Details</u><br>
+<h4>PROJECTS</h4>
 Title: <br>
 <input type="text" name="Ptitle" size="20"><br>
 Link: <br>
@@ -52,10 +77,10 @@ Link: <br>
 Description: <br>
 <input type="text" name="Pdescription" size="100"><br>
 <br>
-<u>Skill Details</u><br>
+<h4>SKILLS</h4>
 Skill: <br>
-<input type="text" name="skill" size="20"><br>
-<input type="submit">
+<input type="text" name="skill" size="20"><br><br>
+<input class = "inp" type="submit">
 </form>
 
 </body>
