@@ -11,7 +11,7 @@
   $userid = "'".$_POST["userid"]."'";
 
   //checking if required fields are left empty
-  if ($name=="''"  || $email=="''" || $phone=="''" || $address=="''" || $github=="''")
+  if ($name=="''"  || $email=="''" || $phone=="''" || $address=="''")
     die("One or more required fields left empty. Please go back and fill them up.<br>");
 
   $etitle = "'".$_POST["Etitle"]."'";
