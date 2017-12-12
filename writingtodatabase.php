@@ -32,7 +32,7 @@
   $serverName = "linkedus.database.windows.net";
   $conn = sqlsrv_connect($serverName, $connectionInfo) or die("<qryn>".print_r(sqlsrv_errors(), TRUE)."</qryn>");
 
-  $sql = "SELECT Pid FROM Person";
+  $sql = "SELECT Pid, Url FROM Person";
   $going = sqlsrv_query($conn, $sql) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
   $pid = 0;
   while ($row1 = sqlsrv_fetch_array($going)){
