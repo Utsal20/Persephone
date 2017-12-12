@@ -37,6 +37,8 @@
   $pid = 0;
   while ($row1 = sqlsrv_fetch_array($going)){
     $pid = $row1['Pid'];
+    if ($userid == ("'".$row1['Url"]."'"))
+      die("UserId already exists! Try another one.<br>");
   }
   $pid++; //creating a new pid for new user
 
