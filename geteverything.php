@@ -16,7 +16,7 @@
   $sql1 = "SELECT * FROM Person WHERE Url = '".$url."'";
   $going = sqlsrv_query($conn, $sql1) or die("<p>".print_r(sqlsrv_errors(), TRUE)."</p>");
   $pid = 0;
-  //fecth the rows and display personal information
+  //fetch the rows and display personal information
   while ($row1 = sqlsrv_fetch_array($going)){
     $pid = $row1['Pid'];
     echo '<body><div class="nameDiv"><h1>'.$row1['Name'].'</h1>';
