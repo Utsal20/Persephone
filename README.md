@@ -1,8 +1,7 @@
 # Persephone
   
-Working:  
 Access the page by going to: https://utsal20.github.io/Persephone/  
-For test purposes, you can enter: jsmith20 and submit  
+Apologies, the app cannot actually run because Github Pages does not execute the php code.  
   
 Legacy site: http://persephone.azurewebsites.net  
 Note: The web app is currently not running through this url.  
